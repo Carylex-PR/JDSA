@@ -47,3 +47,48 @@ public class Main {
 }
 ```
 
+
+Different Terms for Inputs
+
+O(2n)
+```run-java
+public class Main {
+	public static void main(String args[]) {
+		int n = 5;
+		logItems(n);
+	}
+
+	public static void logItems(int n) {
+		for (int i = 0; i < n; i++) {
+			System.out.println(i);
+		}
+	
+		for (int j = 0;j < n; j++) {
+			System.out.println(j);
+		}
+	}
+}
+```
+
+- If input n is replaced with 2 variables a,b -> it is O(a) + O(b) = O(a + b)
+		If a nested a,b -> O(a * b)
+
+
+Arrays
+- Push and pop are O(1)
+- Middle insert or delete needs to shift indexes -> O(n)
+- Search by Value -> O(n)
+- Search by Index -> O(1)
+
+Wrap Up
+- O(n^2) -> Loop within a Loop
+- O(n)  -> Proportional
+- O(log n) -> Divide and conquer
+- O(1) -> Constant
+
+![[Pasted image 20240223113514.png]]
+
+**For Sorting Numbers**
+![[Pasted image 20240223113612.png]]
+
+
